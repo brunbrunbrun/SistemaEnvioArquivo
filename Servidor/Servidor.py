@@ -5,7 +5,7 @@ def receber_arquivo():
     server_socket = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
 
     # Vincular o socket à porta e IP do servidor
-    server_socket.bind(('localhost', 12345))
+    server_socket.bind(('192.168.18.7', 12345))
 
     # Aguardar por conexões
     server_socket.listen(1)
